@@ -7,7 +7,7 @@ A modern, dark-themed Expense Tracker web application built using Next.js and Re
 
 ## 🚀 Live Demo
 
-👉 https://your-vercel-link.vercel.app
+👉https://expense-tracker-three-zeta-71.vercel.app/
 
 ---
 
