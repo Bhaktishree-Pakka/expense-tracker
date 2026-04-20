@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CARD */
+.container {
+  width: 100%;
+  max-width: 520px;
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 26px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  flex: 1;
+  min-width: 70px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #334155;
+  color: #e2e8f0;
+  cursor: pointer;
+}
+
+.filters .active {
+  background: #3b82f6;
+  color: white;
+}
+
+/* SEARCH */
+.search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #334155;
+  color: white;
+}
+
+/* FORM (FIXED) */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #334155;
+  color: white;
+}
+
+/* BUTTONS */
+.primary {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.primary:hover {
+  background: #2563eb;
+}
+
+.danger {
+  background: #ef4444;
+  color: white;
+  border: none;
+  margin-left: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: #334155;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meta {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* TAGS */
+.tag {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.food { background: #14532d; }
+.travel { background: #0c4a6e; }
+.shopping { background: #78350f; }
+.other { background: #4c1d95; }
+
+/* EMPTY */
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}
+
+/* TOTAL */
+.total {
+  margin-top: 15px;
+  text-align: center;
+}
